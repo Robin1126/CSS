@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+	<!--CSS是需要查阅文档的，现在先大致了解一些怎么的工作，-->
+		<title>HTML中引入CSS样式的第二种方式:内联Inline Style</title>
+		<style type="text/css">
+		/*
+			这是css的注释
+			选择器可以是#id或者是直接标签名字
+		*/
+		#span1 {
+			color:red;
+			font-size:10;
+		}
+		div {
+			background-color:black;
+			border: 1px solid red;
+			width: 100px;
+			height: 100px;
+		}
+		/*
+			类选择器可以跨标签,类名可以用空格隔开
+			语法格式：
+				.类名{
+					样式名：样式值；
+					样式名：样式值；
+					...
+				}
+		*/
+		.myclass {
+			border: 1px dashed blue;
+			width: 400px;
+			height: 100px
+		}
+		</style>
+	</head>
+	<body>
+		<span id="span1">对不起，输入的用户信息有误！</span>
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<br><br><br>
+		<input type="text" class="myclass" />
+
+		<br>
+		<br>
+		<br>
+		<select class="myclass">
+			<option>bachelor</option>
+			<option>master</option>
+		</select>
+	</body>
+</html>
